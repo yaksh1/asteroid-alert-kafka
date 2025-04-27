@@ -6,13 +6,27 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="asteroidAlert" />
+      </profile>
+      <profile name="Annotation profile for notificationService" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/unknown/lombok-unknown.jar" />
+        </processorPath>
         <module name="notificationService" />
+        <module name="asteroidAlert" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="asteroidAlert" target="1.5" />
-      <module name="notificationService" target="1.5" />
+      <module name="asteroidAlert" target="19" />
+      <module name="notificationService" target="19" />
     </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="asteroidAlert" options="-parameters" />
+      <module name="notificationService" options="-parameters" />
+    </option>
   </component>
 </project>
