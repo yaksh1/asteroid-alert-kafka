@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/asteroid-alert-microservice.iml" filepath="$PROJECT_DIR$/.idea/asteroid-alert-microservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/asteroidAlert/asteroidAlert.iml" filepath="$PROJECT_DIR$/asteroidAlert/asteroidAlert.iml" />
+      <module fileurl="file://$PROJECT_DIR$/notificationService/notificationService.iml" filepath="$PROJECT_DIR$/notificationService/notificationService.iml" />
+    </modules>
+  </component>
+</project>
